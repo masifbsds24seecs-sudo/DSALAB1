@@ -1,6 +1,9 @@
-#pragma once
-#include <string>
+#ifndef STRING_UTILS_H
+#define STRING_UTILS_H
 
-// Returns the starting index of the first occurrence of 'pattern' in 'text'.
-// If not found, returns -1. Uses naive string matching algorithm.
-int naiveSearch(const std::string& text, const std::string& pattern);
+#include <string>
+using namespace std;
+
+int findPattern(const string &text, const string &pattern);
+
+#endif
