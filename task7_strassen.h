@@ -1,8 +1,11 @@
-#pragma once
-#include <vector>
+#ifndef MATRIX_UTILS_H
+#define MATRIX_UTILS_H
 
-// Multiplies two square matrices (size n x n) using Strassen’s algorithm.
-// Returns the result as a 2D vector.
-std::vector<std::vector<int>> strassenMultiply(
-    const std::vector<std::vector<int>>& A,
-    const std::vector<std::vector<int>>& B);
+#include <vector>
+using namespace std;
+
+vector<vector<int>> standardMultiply(const vector<vector<int>> &A, const vector<vector<int>> &B);
+vector<vector<int>> strassenMultiply(const vector<vector<int>> &A, const vector<vector<int>> &B);
+void printMatrix(const vector<vector<int>> &matrix);
+
+#endif
