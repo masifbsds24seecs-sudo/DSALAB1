@@ -1,6 +1,9 @@
-#pragma once
-#include <vector>
+#ifndef ARRAY_UTILS_H
+#define ARRAY_UTILS_H
 
-// Returns all indices i where arr[i] == key.
-// Time: O(n), Space: O(k) where k = matches found.
-std::vector<int> findIndices(const std::vector<int>& arr, int key);
+#include <vector>
+using namespace std;
+
+vector<int> findAllIndices(int arr[], int size, int key);
+
+#endif
