@@ -1,6 +1,10 @@
-#pragma once
-#include <vector>
+#ifndef PASCAL_UTILS_H
+#define PASCAL_UTILS_H
 
-// Generates Pascal's Triangle up to n rows.
-// Returns a vector of vectors (each inner vector is a row).
-std::vector<std::vector<int>> pascalTriangle(int n);
+#include <vector>
+using namespace std;
+
+vector<vector<int>> generatePascalTriangle(int n);
+void printPascalTriangle(const vector<vector<int>> &triangle);
+
+#endif
