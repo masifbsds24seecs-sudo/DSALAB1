@@ -1,6 +1,9 @@
-#pragma once
-#include <vector>
+#ifndef STATS_UTILS_H
+#define STATS_UTILS_H
 
-// Returns the mode (most frequent element) of an array.
-// If array is empty, returns -1.
-int findMode(const std::vector<int>& arr);
+#include <vector>
+using namespace std;
+
+vector<int> findMode(int arr[], int size);
+
+#endif
